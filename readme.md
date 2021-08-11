@@ -1,5 +1,11 @@
 # ci3-dasboard
 
+Just Clone it and run
+```
+http://localhost:8090/ci3-dasboard/index.php/admin/
+```
+
+- `controller/admin/Overview.php`
 ```php
 public function index()
 {
@@ -7,6 +13,7 @@ public function index()
     $this->load->view("admin/overview");
 }
 ```
+
 - `setting_top.php`
 ```html
 <!DOCTYPE html>
@@ -50,6 +57,7 @@ public function index()
 </html>
 ```
 
+- Preview
 ![](https://github.com/gzeinnumer/ci3-dasboard/blob/master/preview/example1.jpg)
 
 Only Design
