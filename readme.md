@@ -50,8 +50,7 @@ public function index()
 </html>
 ```
 
-![]()
-
+![](https://github.com/gzeinnumer/ci3-dasboard/blob/master/preview/example1.jpg)
 
 Only Design
 
