@@ -7,34 +7,56 @@ public function index()
     $this->load->view("admin/overview");
 }
 ```
-
-```php
+- `setting_top.php`
+```html
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<?php $this->
+		load->view("admin/_partials/head.php") ?>
+	</head>
 
-<head>
-    <?php $this->load->view("admin/_partials/head.php") ?>
-</head>
-
-<body id="page-top">
-    <?php $this->load->view("admin/_partials/navbar.php") ?>
-    <div id="wrapper">
-        <?php $this->load->view("admin/_partials/sidebar.php") ?>
-        <div id="content-wrapper">
+	<body id="page-top">
+		<?php $this->load->view("admin/_partials/navbar.php") ?>
+		<div id="wrapper">
+			<?php $this->load->view("admin/_partials/sidebar.php") ?>
+			<div id="content-wrapper"></div>
+		</div>
 ```
 
-```php
+- `overview.php`
+```html
+<?php $this->load->view("admin/_partials/setting_top.php") ?>
 
+<div class="container-fluid">
+
+    <?php $this->load->view("admin/_partials/breadcrumb.php") ?>
+    
+</div>
+
+<?php $this->load->view("admin/_partials/setting_bottom.php") ?>
 ```
 
-```php
+- `setting_bottom.php`
+```html
+            <?php $this->load->view("admin/_partials/footer.php") ?>
+        </div>
+    </div>
+    <?php $this->load->view("admin/_partials/scrolltop.php") ?>
+    <?php $this->load->view("admin/_partials/modal.php") ?>
+    <?php $this->load->view("admin/_partials/js.php") ?>
+</body>
 
+</html>
 ```
 
-```php
+![]()
+
+
+Only Design
+
+---
 
 ```
-
-```php
-
+Copyright 2021 M. Fadli Zein
 ```
